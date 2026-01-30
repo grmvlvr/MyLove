@@ -1,7 +1,7 @@
 /* Основные стили */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #fff5f5;
+    background-color: #f7e8a8;
     color: #333;
     text-align: center;
     padding: 0;
@@ -12,80 +12,100 @@ body {
     max-width: 90%;
     margin: 20px auto;
     background-color: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border: 2px solid #f19ab4;
 }
 
+/* Текст "Все началось..." */
+.small-text {
+    font-size: 0.9em;
+    color: #8fbceb;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.tiny-text {
+    font-size: 0.7em;
+    color: #cbb7e2;
+    opacity: 0.7;
+}
+
+/* Заголовок с датой */
 h1 {
-    color: #ff6b6b;
     font-family: 'Pacifico', cursive;
-    font-size: 2em;
-    margin-bottom: 10px;
+    color: #f19ab4;
+    font-size: 1.8em;
+    margin: 10px 0;
 }
 
-.intro {
-    font-size: 1.1em;
-    margin-bottom: 15px;
+/* Подзаголовок */
+.subtitle {
+    font-size: 1.2em;
+    color: #7fbfa3;
+    margin: 20px 0;
 }
 
-.photo img {
+/* Слайдер */
+.slider {
+    position: relative;
     max-width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+
+.slide.active {
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Кнопки слайдера */
+.slider-controls {
     margin: 15px 0;
 }
 
-.message {
-    text-align: left;
-    margin: 15px 0;
-    font-size: 1em;
-}
-
-.message ul {
-    padding-left: 20px;
-}
-
-.message li {
-    margin-bottom: 8px;
-}
-
-button {
-    background-color: #ff6b6b;
+.slider-controls button {
+    background-color: #f19ab4;
     color: white;
     border: none;
-    padding: 12px 20px;
-    font-size: 1em;
-    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 0 10px;
+    border-radius: 50%;
     cursor: pointer;
-    margin: 20px 0;
-    width: 80%;
+    font-size: 1.2em;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
-button:hover {
-    background-color: #ff5252;
+.slider-controls button:hover {
+    background-color: #e87aa2;
 }
 
-.hidden {
-    display: none;
-}
-
-/* Медиа-запросы для телефонов */
+/* Адаптивность */
 @media (max-width: 600px) {
-    .container {
-        width: 95%;
-        padding: 15px;
-    }
-
     h1 {
-        font-size: 1.8em;
+        font-size: 1.5em;
     }
 
-    button {
-        width: 90%;
-        padding: 10px;
-    }
-
-    .photo img {
-        width: 100%;
+    .slider-controls button {
+        width: 35px;
+        height: 35px;
+        font-size: 1em;
     }
 }

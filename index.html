@@ -3,31 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Для тебя</title>
+    <title>Наша история</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <h1>Привет, мой любимый!</h1>
-        <p class="intro">Я создала этот сайт специально для тебя, потому что хочу сказать...</p>
-        <div class="photo">
-            <img src="https://i.pinimg.com/474x/ef/99/90/ef99902af525227c4705570e41c2f9b6.jpg?nii=t" alt="Наше фото">
+        <p class="small-text">Все началось ровно 1 год и 2 месяца назад…<br>
+        <span class="tiny-text">так-то ещё раньше, но…</span></p>
+
+        <h1>13.12.2024 мы начали строить наши отношения</h1>
+
+        <p class="subtitle">Смотри, сколько моментов мы уже прожили вместе!</p>
+
+        <!-- Слайдер с фотографиями -->
+        <div class="slider">
+            <div class="slide active">
+                <img src="photos/photo1.jpg" alt="Наше фото 1">
+            </div>
+            <div class="slide">
+                <img src="photos/photo2.jpg" alt="Наше фото 2">
+            </div>
+            <div class="slide">
+                <img src="photos/photo3.jpg" alt="Наше фото 3">
+            </div>
+            <!-- Добавь больше слайдов по аналогии -->
         </div>
+
+        <!-- Кнопки для слайдера -->
+        <div class="slider-controls">
+            <button class="prev-btn">❮</button>
+            <button class="next-btn">❯</button>
+        </div>
+
+        <!-- Остальной контент -->
         <div class="message">
-            <p>Ты самый невероятный человек в моей жизни. Спасибо за то, что ты есть. Я люблю тебя за...</p>
-            <ul>
-                <li>твою улыбку,</li>
-                <li>твою заботу,</li>
-                <li>твои глупые шутки,</li>
-                <li>и за то, как ты делаешь меня счастливой.</li>
-            </ul>
-        </div>
-        <button id="surprise-btn">Нажми сюда для сюрприза!</button>
-        <div id="surprise" class="hidden">
-            <p>Я люблю тебя больше, чем все звезды на небе! ❤️</p>
+            <p>Ты — мой самый любимый человек...</p>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
