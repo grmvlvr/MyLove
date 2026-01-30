@@ -28,4 +28,4 @@ prevBtn.addEventListener('click', () => {
 setInterval(() => {
     let nextSlide = (currentSlide + 1) % slides.length;
     showSlide(nextSlide);
-}, 5000);
+}, 50000);

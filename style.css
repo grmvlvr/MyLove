@@ -1,8 +1,8 @@
 /* Основные стили */
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f7e8a8;
-    color: #333;
+    background-color: #ded8e2;
+    color: #741199;
     text-align: center;
     padding: 0;
     margin: 0;
@@ -11,11 +11,11 @@ body {
 .container {
     max-width: 90%;
     margin: 20px auto;
-    background-color: white;
-    padding: 25px;
-    border-radius: 15px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    border: 2px solid #f19ab4;
+    background-color: #f3f3f3;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 0px solid #ffffff;
 }
 
 /* Текст "Все началось..." */
@@ -34,16 +34,27 @@ body {
 
 /* Заголовок с датой */
 h1 {
-    font-family: 'Pacifico', cursive;
-    color: #f19ab4;
+    color: #6c0b90;
     font-size: 1.8em;
-    margin: 10px 0;
+    margin: 0px 0;
+}
+
+h2 {
+    color: #d799e9;
+    font-size: 2em;
+    margin: 0px 0;
+}
+
+h3 {
+    color: #d899e987;
+    font-size: 1em;
+    margin: 0px 0;
 }
 
 /* Подзаголовок */
 .subtitle {
-    font-size: 1.2em;
-    color: #7fbfa3;
+    font-size: 1em;
+    color: #741199;
     margin: 20px 0;
 }
 
